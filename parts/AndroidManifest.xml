@@ -39,7 +39,8 @@
         android:directBootAware="true"
         android:theme="@style/Theme.SubSettingsBase">
 
-        <receiver android:name=".BootCompletedReceiver">
+        <receiver android:name=".BootCompletedReceiver"
+                  android:exported="false">
             <intent-filter>
                 <action android:name="android.intent.action.LOCKED_BOOT_COMPLETED" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -48,6 +49,7 @@
 
         <activity
             android:name=".dirac.DiracActivity"
+            android:exported="false"
             android:label="@string/dirac_title">
             <intent-filter>
                 <action android:name="com.android.settings.action.IA_SETTINGS" />
@@ -59,7 +61,8 @@
         </activity>
         
         <activity
-            android:name=".speaker.ClearSpeakerActivity" 
+            android:name=".speaker.ClearSpeakerActivity"
+            android:exported="false" 
             android:label="@string/clear_speaker_title"
             android:theme="@style/Theme.SubSettingsBase">
             <intent-filter>
@@ -77,6 +80,7 @@
 
         <activity
             android:name=".doze.DozeSettingsActivity"
+            android:exported="false"
             android:label="@string/ambient_display_title">
             <intent-filter>
                 <action android:name="com.android.settings.action.IA_SETTINGS" />
@@ -90,6 +94,7 @@
 
         <activity
             android:name=".thermal.ThermalActivity"
+            android:exported="false"
             android:label="@string/thermal_title">
             <intent-filter>
                 <action android:name="com.android.settings.action.IA_SETTINGS" />
@@ -112,6 +117,7 @@
 
         <activity
             android:name=".TileEntryActivity"
+            android:exported="false"
             android:label="@string/device_settings_app_name"
             android:theme="@style/Theme.SubSettingsBase">
             <intent-filter>
@@ -121,6 +127,7 @@
 
         <service
             android:name=".thermal.ThermalTileService"
+            android:exported="false"
             android:icon="@drawable/ic_thermal"
             android:label="@string/thermal_title"
             android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
@@ -132,6 +139,7 @@
 
         <service
             android:name=".dirac.DiracTileService"
+            android:exported="false"
             android:icon="@drawable/ic_headphone"
             android:label="@string/dirac_qs_tile_title"
             android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">

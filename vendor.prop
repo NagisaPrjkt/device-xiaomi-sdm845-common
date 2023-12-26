@@ -124,6 +124,8 @@ ro.vendor.display.cabl=2
 debug.sf.disable_client_composition_cache=1
 vendor.display.disable_rotator_downscale=1
 vendor.display.perf_hint_window=50
+debug.hwui.use_hint_manager=true
+debug.hwui.target_cpu_time_percent=30
 
 # DPM
 persist.vendor.dpm.idletimer.mode=default

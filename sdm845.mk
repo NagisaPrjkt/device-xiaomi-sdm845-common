@@ -120,6 +120,10 @@ PRODUCT_PACKAGES += \
     libldacBT_enc \
     libldacBT_abr
 
+# Configstore
+PRODUCT_PACKAGES += \
+    disable_configstore
+
 # Camera
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl:32 \

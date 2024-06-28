@@ -84,3 +84,6 @@ ro.vendor.qti.va_aosp.support=1
 
 # RCS
 persist.rcs.supported=1
+
+# SystemUI
+persist.sysui.disableBlur=false

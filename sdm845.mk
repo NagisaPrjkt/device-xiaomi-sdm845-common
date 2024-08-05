@@ -105,13 +105,6 @@ PRODUCT_PACKAGES += \
 # Bluetooth Library Deps
 PRODUCT_PACKAGES += \
     libbluetooth_audio_session \
-    libbthost_if.vendor \
-    libldacBT_bco \
-    libldacBT_bco.vendor \
-    liblhdc \
-    liblhdcBT_enc \
-    liblhdcdec \
-    liblhdcBT_dec
 
 PRODUCT_PACKAGES += \
     libldacBT_enc \
@@ -261,7 +254,6 @@ PRODUCT_PACKAGES += \
 
 # Media
 PRODUCT_PACKAGES += \
-    android.hardware.media.omx@1.0-impl \
     android.hardware.media.omx@1.0-service \
     libstagefright_omx.vendor \
     libavservices_minijail \
